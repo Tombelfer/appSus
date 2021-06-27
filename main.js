@@ -1,9 +1,8 @@
-// import appHeader from "./apps/book/cmps/appHeader.js"
-import { eventBus } from "./apps/book/services/event-bus-service.js"
-import { router } from "./router.js"
-import appSusHeader from "./cmps/appSus-header.js"
-import appSusFooter from "./cmps/appSus-footer.js"
-import userMsg from "./cmps/user-msg.js"
+import { eventBus } from "./js/apps/book/services/event-bus-service.js"
+import { router } from "./js/router.js"
+import appSusHeader from "./js/cmps/appSus-header.js"
+import appSusFooter from "./js/cmps/appSus-footer.js"
+import userMsg from "./js/cmps/user-msg.js"
 
 
 const options = {
@@ -22,7 +21,6 @@ const options = {
         appSusFooter,
         appSusHeader,
         userMsg
-        // appFooter,
     }
 }
 const app = new Vue(options)
