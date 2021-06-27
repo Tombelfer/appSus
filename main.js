@@ -9,7 +9,6 @@ const options = {
     el: '#app',
     router,
     template: `
-    ין
     <section class="app-container">
         <userMsg></userMsg>
     <appSusHeader class="main-header"></appSusHeader>
