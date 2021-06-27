@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'roboto-light';
+    src: url('/fonts/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: 'roboto-bold';
+    src: url('/fonts/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: 'roboto-regular';
+    src: url('/fonts/Roboto-Regular.ttf');
+}
+
+
+body {
+    font-family: roboto-bold;
+    margin: 0;
+    font-size: .875rem;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 .866em;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.142em;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    margin: 0;
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* USER MSG */
+.user-msg{
+    border-radius: 20em;
+    font-weight: bolder;
+    padding: 2em;
+    text-align: center;
+    background-color: rgb(190, 238, 190);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 25em;
+    /* height: 100px */
+}
+/* APP CONTAINER */
+.app-container{
+}
+/* MAIN HEADER */
+.main-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: cornflowerblue;
+   width: 100%;
+   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+        border-bottom: solid 7px #000000;
+    background-color: #a4da10;
+}
+
+.app-header .main-nav li{
+    display: inline-block;
+    text-align: center;
+   padding: 3em;
+   border-right: 1px solid #1d1d1d;
+   border-left: 1px solid #1d1d1d;
+}
+
+.app-header .main-nav a :hover{
+  box-shadow: 0px 0px 8px 0px #ff6600;
+}
+.app-header img{
+    height: 6.5em;
+    width: 6em;
+}
+/* MAIN APP */
+.main-app{
+    height: 100vh;
+    font-family: roboto-regular;
+}
+/* MAIN FOOTER */
+.main-footer{
+        bottom: 0;
+        position: fixed;
+        width:100%;
+        text-align: center;
+        background-color: #a6ce39d7;
+        height: 5vh;
+        
+}
+
+/* HOME PAGE */
+.home-page{
+    background-image: url('/img/apps/cool-background.png');
+}
+.home-page img{
+}
+/* EMAIL APP */
+
+.email-app {
+    display: grid; 
+    grid-template-columns: 0.5fr 2.2fr; 
+    grid-template-rows:0.4fr 0.4fr 2.6fr 0.6fr; 
+    gap: 0px 0px; 
+}
+.menu { grid-area: 3 / 1 / 3 / 2; }
+.filter { grid-area: 2 / 1 / 3 / 3; }
+.list { grid-area: 2 / 2 / 4 / 3; }
+.status { grid-area: 2 / 1 / 3 / 2; }
+.new { grid-area: 1 / 1 / 2 / 2; }
+.email-app .logo{
+    width: 13em;
+    padding: 1em;
+}
+
+
+  /* EMAIL PREVIEW */
+.email-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 1.5em 1.5em ;
+	border-bottom: 2px solid #d6d6d6cc;
+	transition: all 0.4s;
+	cursor: pointer;
+    background-color: rgb(245, 245, 245);
+    margin-right:1em
+}
+.email-container:hover{
+    background-color: rgb(216, 215, 215);
+
+}
+.email-container .info { 
+}
+.email-container .body { 
+    padding-top: 1em;
+}
+.email-container .options { 
+    text-align: center;
+    display: flex;
+    width: 5em;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: 1 / 1 / 3 / 2;   
+}
+
+.email-container .star
+{
+    width: 1em;
+	height: 1em;
+}
+
+.email-container .un-read{
+    font-family: roboto-bold;
+    font-weight: bolder;
+}
+.email-container .base{
+    width:max-content
+}
+/* EMAIL MENU */
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.menu .new img{
+    padding: 1em 0;
+}
+.menu .new:hover{
+    border-radius: 2em;
+    background-color: rgb(216, 215, 215);
+
+}
+.menu .status{
+    padding:2em 0;
+    font-weight: bolder;
+    width: 12em;
+}
+.menu .status:hover{
+
+}
+.menu .email-status{
+    padding: 0.5em;
+    border-radius: 2em;
+}
+.menu .email-status:hover{
+    background-color: rgb(216, 215, 215);
+transition: ease-in 0.3s;
+}
+.status{
+    align-items: flex-end;
+}
+  /* EMAIL FILTE */
+  .search-container{
+    border-radius: 2em;
+    padding: 1em;
+    width: fit-content;
+    display: flex;
+    background-color: rgb(248, 250, 248);
+}
+.search-container input{
+    width: 6.5em;
+    background-color: initial;
+    border: none;
+}
+.search-container select{
+    width: 3em;
+    border: none;
+    background-color: initial;
+}
+.search-container input:focus-visible {
+    outline: -webkit-focus-ring-color none 3px;
+}
+

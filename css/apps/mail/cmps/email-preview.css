@@ -1,0 +1,12 @@
+.email{
+    padding-left: 2px;
+    margin: 2px;
+    margin-bottom: 6px;
+}
+.un-read {
+    background-color: #69c2c2;
+    font-weight: 800;
+}
+img{
+    width: 20px;
+}
